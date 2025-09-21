@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Batman</title>
+    <link rel="icon" href="assets/batman.png"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div style="position: relative;">
+    <video  id="endvid" autoplay muted style="position: fixed; min-width: 100%; min-height: 100%; right: 0; bottom: 0;">
+            <source  src="assets/enddi.mp4" type="video/mp4">
+        </video>
+        
+</div>
+<div id="finBut" style="position: absolute; bottom: 10%; left: 43.75%; display: none; width:50%; ">
+        <a href="index.html" style=" width: 50%;  ">
+            <button class="mainButts" style=" width: 50%; height: 50px; font-size: 30px; ">
+                end it
+            </button>
+        </a>
+    </div>
+
+
+
+</body>
+
+<script>
+    document.getElementById('endvid').addEventListener('timeupdate', function(){
+    if(document.getElementById('endvid').currentTime > 18){
+        
+        document.getElementById('finBut').style.display = 'flex';
+    }
+});
+</script>
+
+</html>
+
+
+
+

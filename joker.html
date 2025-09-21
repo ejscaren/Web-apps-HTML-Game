@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Batman</title>
+    <link rel="icon" href="assets/batman.png"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="bbg9">
+    <a href="cells.html"  style = "position: absolute; text-decoration: none; display: flex; 
+    margin: 30px; ">
+    <button class="mainButts" style="height: 50 px; width: 100px; font-size: 20px;">leave</button>
+    </a>
+
+    <div style="height: 750px;"></div>
+    <div style="padding-top: 0px; border: 3px, solid; border-color: blue; 
+    background-color: cornflowerblue; margin-left: 600px;  margin-right: 600px; ">
+        <h3 class="mainButts" style="display: flex; justify-content: center;">The Joker</h3>
+    
+        <p id="teex" style="padding-left: 4px; color:crimson;">
+            Batsy! My knight in very, very dark armor.
+            You are late. I almost started talking to the voices again.
+            At least they laugh at my jokes.
+
+        </p>
+        <div class="center" style="padding-bottom: 4px ;">
+        <button id="pre" class="mainButts">prev</button>
+        <button id="nex" class="mainButts">next</button>
+        </div>
+
+</div>
+
+</body>
+
+<script>
+    let page = 0;
+    document.getElementById("pre").addEventListener('click', () => {
+        
+
+        
+        if(page==0){
+
+        }
+        else if(page==1){
+            page--;
+        document.getElementById('teex').innerHTML = 'Batsy! My knight in very, very dark armor. You are late. I almost started talking to the voices again. At least they laugh at my jokes.';
+        }
+        else if(page==2){
+            page--;
+            document.getElementById('teex').innerHTML = 'Batman says nothing.';
+        }
+        else{
+
+        }
+
+    })
+    
+    document.getElementById('nex').addEventListener('click', () => {
+         if(page==0){
+            page++;
+            document.getElementById('teex').innerHTML = 'Batman says nothing.';
+        }
+        else if(page==1){
+            page++;
+        document.getElementById('teex').innerHTML = 'If I had a nickel for every time you showed up, stared at me like a disappointed dad, and said nothing... I would not need to steal any money';
+
+        }
+        else if(page==2){
+      
+        }
+        else{
+
+        }
+        
+    })
+
+
+</script>
+
+</html>
